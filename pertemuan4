@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Belajar Membuat Form pada HTML</title>
+</head>
+ 
+<body>
+<form>
+	Nama Lengkap:     <input type="text" name="Nama Lengkap " placeholder= "Masukan Nama Lengkap anda "><br/>
+	Username : <input type="text" name       ="Username" placeholder = "Masukan Username"></br/>
+	password : <input type="password" name   ="pass" placeholder = "Masukan password" ><br/>
+	Email :    <input type="text" name       ="Email" placeholder = "Masukan Email"><br/>
+	Telephon :   <input type="text" name     ="Telephon" placeholder = " Masukan Telepon anda"><br/>
+	
+	<input type="submit" value="Buat Akun saya">
+</form>
+</body>
+</html>   Hasil
+ 
+FORM 2
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Belajar Membuat Form pada HTML</title>
+</head>
+ 
+<body>
+<form>
+	Nama Lengkap:     <input type="text" name="Nama Lengkap " placeholder= "Masukan Nama Lengkap anda "required ><br/>
+	Username : <input type="text" name       ="Username" placeholder = "Masukan Username" required></br/>
+	password : <input type="password" name   ="pass" placeholder = "Masukan password"required><br/>
+	Email :    <input type="text" name       ="Email" placeholder = "Masukan Email"required><br/>
+	Telephon :   <input type="text" name     ="Telephon" placeholder = " Masukan Telepon anda"required><br/>
+	
+	<input type="submit" value="Buat Akun saya">
+</form>
+</body>
+</html>
+HASIL
+ 
+FORM 3
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Belajar Membuat Form pada HTML</title>
+</head>
+ 
+<body>
+<form>
+	Nama Lengkap:     <input type="text" name="Nama Lengkap " placeholder= "Masukan Nama Lengkap anda "required ><br/>
+	Username : <input type="text" name       ="Username" placeholder = "Masukan Username" required></br/>
+	password : <input type="password" name   ="pass" placeholder = "Masukan password"required><br/>
+	Tanggal Lahir :  <input type="date" name="birth" required ><br/>
+	Email :    <input type="text" name       ="Email" placeholder = "Masukan Email" required><br/>
+	Telephon :   <input type="telp" name     ="Telephon" placeholder = " Masukan Telepon anda" maxlength="12"
+	required><br/>
+	
+	<input type="submit" value="Buat Akun saya">
+</form>
+</body>
+</html>
+HASIL
+ 
+FORM 4
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Membuat Form</title>
+</head>
+ 
+<body>
+<form action="" method="post">
+<table border=0>
+ <tr>
+	<td>Nama Lengkap: </td>
+	<td> <input
+	type="text"
+	name="Nama Lengkap " 
+	placeholder= "Masukan Nama Lengkap anda "
+	maxlength="15"
+	required/>
+	</td>
+</tr>
+
+<tr>
+<td>Username :</td>
+<td>
+ <input 
+ type="text"
+ placeholder = "Masukkan Username"
+ maxlength= "7" required/>
+ 
+ </td>
+ </tr>
+ 
+ <tr>
+ <td>Tanggal lahir :</td>
+ <td>  
+<input
+type= "date"
+name= "birth" 
+placeholder = "Masukan tanggal lahir anda"required/>
+</td>
+</tr>
+
+<tr>
+<td>E-mail:</td>
+<td>
+
+<input
+type ="email"
+name ="email"
+placeholder="Masukan Alamat Email Anda" required/>
+
+</td>
+</tr>
+
+<tr>
+<td>Telepon:</td>
+<td>
+ <input
+ type="text"
+ name="tel"
+ placeholder="Masukkan nomor telepon anda" required/>
+ </td>
+ </tr>
+ 
+ <tr>
+ <td>
+ <input
+ type="submit"
+ value="Buat Akun Saya"
+ 
+ </td>
+ </tr>
+
+</table>
+</form>
+</body>
+</html>
+
