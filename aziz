@@ -1,0 +1,94 @@
+<?php
+	$koneksi = mysqli_connect('localhost', 'root','','contoh_database') or die ('koneksi gagal');
+?>
+
+
+
+
+<DOCTYPE html>
+<html lang="id">
+<?php
+ include ("koneksi.php");
+ 
+ ?>
+ <head>
+  <title> tes koneksi </title>
+  </head>
+<body>
+<h4> koneksi berhasil </h4>
+
+</body>
+
+</htm
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title> latihan 1</title>
+	
+	</head>>
+ <body>
+   <h2> Menampilkan data mahasiswa</h2>
+   <table border="1"
+   <tr>
+   
+   
+   <th>No</th>
+   <th>Nim</th>
+   <th>Nama</th>
+   <th>Alamat</th>
+   
+   </tr>
+   
+   <?php
+   include 'koneksi.php';
+   $no = 1;
+   $data = mysqli_query($koneksi,"select * from mahasiswa");
+   while($d = mysqli_fetch_array($data)) {
+   ?>
+   <tr>
+           <td><?php echo $no++; ?></td>
+		   <td><?php echo $d['Nim']; ?></td>
+		   <td><?php echo $d['Nama']; ?></td>
+		   <td><?php echo $d['Alamat'];?></td>
+		   
+    </tr>
+	<?php
+	} 
+	?>
+	
+	</table>
+	<a href="latihan2.php">+ tambah data mahasiswa</a>
+	</body>
+	</html>
+  
+  
+  <?php
+
+include 'koneksi.php';
+
+  $nim = $_POST['nim'];
+  $nama = $_POST['nama'];
+  $alamat = $_POST['alamat'];
+  
+  mysqli_query($koneksi,"insert into mahasiswa values ('$nim','$nama','$alamat')");
+  
+  header("location:latihan1.php");
+  
+  ?>
+  
+  
+  
+  
+  
+  
+  
+  
+  
